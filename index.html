@@ -79,7 +79,21 @@
         color: rgba(255, 255, 255, .8);
     }
     </style>
-    <script>
+</head>
+
+<body>
+    <div class="paper">
+        <div class="paper-content">
+            <textarea id="input" autofocus></textarea>
+        </div>
+    </div>
+    <br>
+    <div class="paper">
+        <div class="paper-content">
+            <textarea id="output"></textarea>
+        </div>
+    </div>
+        <script>
     function updateContent() {
 
         let matchPatterns = {
@@ -121,20 +135,6 @@
 
     document.querySelector('#input').addEventListener('change', event => updateContent())
     </script>
-</head>
-
-<body>
-    <div class="paper">
-        <div class="paper-content">
-            <textarea id="input" autofocus></textarea>
-        </div>
-    </div>
-    <br>
-    <div class="paper">
-        <div class="paper-content">
-            <textarea id="output"></textarea>
-        </div>
-    </div>
     <!-- <input type="button" value="Click Me"> -->
     <footer>
         Footer info here.
