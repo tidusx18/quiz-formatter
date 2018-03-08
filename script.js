@@ -42,5 +42,6 @@ function addListener() {
 }
 
 document.addEventListener( 'load', function(event) {
+	console.log(event)
 	event.querySelector('#input').addEventListener( 'change', updateContent() )
 })
