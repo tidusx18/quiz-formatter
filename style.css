@@ -8,6 +8,13 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+div.align {
+    position: relative;
+    width: 90%;
+    max-width: 800px;
+    margin: 25px auto;
+}
+
 .paper {
     position: relative;
     width: 90%;
