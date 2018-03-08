@@ -7,21 +7,27 @@
 </head>
 
 <body>
-    <div class="paper">
-        <div class="paper-content">
-            <textarea id="input" autofocus></textarea>
-        </div>
-    </div>
-    <br>
-    <div class="paper">
-        <div class="paper-content">
-            <textarea id="output"></textarea>
-        </div>
-    </div>
-    <!-- <input type="button" value="Click Me"> -->
-    <footer>
-        Footer info here.
-    </footer>
+	<h1>Paste Question Pool Here</h1>
+	<input type="button" value="Click Here to Update Pool">
+	<br><br>
+	<div class="paper">
+	    <div class="paper-content">
+		<textarea id="input" autofocus></textarea>
+	    </div>
+	</div>
+	<br>
+	<h1>Copy Updated Question Pool from Here</h1>
+	<div class="paper">
+	     <div class="paper-content">
+		<textarea id="output"></textarea>
+	    </div>
+	</div>
+
+	<!-- <input type="button" value="Click Me"> -->
+
+	<footer>
+	    Quiz pool formatter.
+	</footer>
     <script>
         function updateContent() {
 	
@@ -62,7 +68,7 @@
 	output.value = updatedQuestions
 }
 
-document.querySelector('#input').addEventListener( 'change', updateContent )
+document.querySelector('input').addEventListener( 'change', updateContent )
     </script>
 </body>
 
