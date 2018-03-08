@@ -37,4 +37,8 @@ function updateContent() {
 	output.value = updatedQuestions
 }
 
-document.querySelector('#input').addEventListener( 'change', event => updateContent() )
+function addListener() {
+	document.querySelector('#input').addEventListener( 'change', updateContent() )
+}
+
+document.addEventListener( 'load', addListener() )
